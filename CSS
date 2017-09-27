@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width", initial-scale="1">
+	<title>Responsive Layout</title>
+<style>
+	/*********Base Styles***********/
+*{
+	box-sizing: border-box;
+}
+
+h1{
+    margin-bottom: 15px;
+    color: red;
+    font-size: 30px;
+	font-family: cursive;
+	text-align: center;
+}
+section{
+
+	background-color: green;
+	text-align: center;
+	font-family: cursive;
+}
+div{
+
+
+	box-sizing: border-box;
+
+	width: 100%;
+	display: inline-block;
+	height: 100px;
+    margin-right: auto;
+	margin-left: auto;
+    font-family: cursive;
+    text-align: center;
+}
+
+p{ padding: 1px;
+    margin: 1px;
+    font-size: 20px;
+    background-color:#00B7EA;
+    color: black;
+    text-align: center;
+
+}
+
+
+
+/*Simple Responsive Framework. */
+.row {
+	width: 100%;
+}
+/*********Large devices only*************/
+@media (min-width: 992px) {
+.col-lg-1, .col-lg-2, .col-lg-3, 
+{
+	float: center;
+	border: 1px solid black;
+
+}
+.col-lg-1{
+
+    width: 8.33%
+}
+.col-lg-2{
+	width: 16.66%
+	clear:;
+}
+.col-lg-3{
+	width: 25%;
+}
+}
+/*************Medium devices only*****************/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-md-1, .col-md-2, .col-md-3, 
+	{
+		float: center;
+	  border: 1px solid black;
+
+	  
+	} 
+.col-md-1 {
+
+    width: 8.33%
+   
+}
+.col-md-2{
+	  width: 16.66%
+	 } 
+
+.col-md-3{
+	width: 25%;
+}
+}
+/****************Small devices only******************/
+@media (min-width: 767px) {
+	.col-sd-1, .col-sd-2, .col-sd-3, 
+	{ float: center;
+	  border: 1px solid black; 
+	} 
+.col-sd-1{
+
+    width: 8.33%
+}
+.col-sd-2{
+	width: 16.66%
+}
+.col-sd-3{
+	width: 25%;
+}
+}
+
+</style>
+</head>
+<body>
+    <h1>Our Menu</h1>
+	<div class="row">
+	<div class="col-lg-3 col-md-3"><section>Chicken</section>
+	<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p>
+	</div>
+	<div class="col-lg-3 col-md-3"><section>Beef</section>
+	<p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p>
+	</div>
+    <div class="col-lg-3 col-md-3"><section>Sushi</section>
+    <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p>
+    </div>
+</body>
+</html>
